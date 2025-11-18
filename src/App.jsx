@@ -8,8 +8,7 @@ function App() {
       {/* navbar section component: NavBar  */}
       <NavBar></NavBar>
 
-      <h1 className="text-2xl bg-red-200">Navbar</h1>
-
+      {/* price option card section component: PriceOptions  */}
       <PriceOptions></PriceOptions>
     </>
   );

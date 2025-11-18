@@ -73,10 +73,13 @@ const PriceOptions = () => {
   ];
 
   return (
-    <div>
-      {gymPricingOptions.map((option) => (
-        <PriceOption key={option.id} option={option}></PriceOption>
-      ))}
+    <div className="mt-10 mx-8">
+      {/* price options container  */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {gymPricingOptions.map((option) => (
+          <PriceOption key={option.id} option={option}></PriceOption>
+        ))}
+      </div>
     </div>
   );
 };
