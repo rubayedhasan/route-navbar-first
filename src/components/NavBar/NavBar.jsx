@@ -17,14 +17,21 @@ const NavBar = () => {
   ];
 
   return (
-    <nav className="text-2xl md:hidden">
+    <nav className="">
       {/* hamburger icons container  */}
-      <div onClick={() => setOpenMenu(!openMenu)}>
+      <div
+        onClick={() => setOpenMenu(!openMenu)}
+        className="text-2xl p-5 md:hidden bg-amber-400"
+      >
         {openMenu === true ? <RxCross2 /> : <RiMenu2Fill />}
       </div>
 
       {/* nav items container  */}
-      <ul className="md:flex">
+      <ul
+        className={`md:flex bg-amber-200 p-5 absolute md:static duration-700  ${
+          openMenu ? "top-16" : "-top-80"
+        }`}
+      >
         {/* nav items  */}
         {routes.map((route) => (
           <NavLink key={route?.id} route={route}></NavLink>

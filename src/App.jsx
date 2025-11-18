@@ -1,5 +1,6 @@
 import "./App.css";
 import NavBar from "./components/NavBar/NavBar.jsx";
+import PriceOptions from "./components/PriceOptions/PriceOptions.jsx";
 
 function App() {
   return (
@@ -8,6 +9,8 @@ function App() {
       <NavBar></NavBar>
 
       <h1 className="text-2xl bg-red-200">Navbar</h1>
+
+      <PriceOptions></PriceOptions>
     </>
   );
 }
