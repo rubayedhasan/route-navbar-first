@@ -1,4 +1,5 @@
 import "./App.css";
+import Charts from "./components/Charts/Charts.jsx";
 import NavBar from "./components/NavBar/NavBar.jsx";
 import PriceOptions from "./components/PriceOptions/PriceOptions.jsx";
 
@@ -10,6 +11,9 @@ function App() {
 
       {/* price option card section component: PriceOptions  */}
       <PriceOptions></PriceOptions>
+
+      {/* react recharts  */}
+      <Charts></Charts>
     </>
   );
 }
